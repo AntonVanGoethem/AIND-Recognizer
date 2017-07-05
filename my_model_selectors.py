@@ -77,9 +77,29 @@ class SelectorBIC(ModelSelector):
         warnings.filterwarnings("ignore", category=DeprecationWarning)
 
         # TODO implement model selection based on BIC scores
-        raise NotImplementedError
-
-
+        try:
+            
+            lowest_BIC = float("inf")
+            best_model = None
+            hmm_model = None
+            
+            for n_states in range(self.min_n_components, self.max_n_components+1):
+                hmm_model = GaussianHMM(n_components=n_states, covariance_type="diag",
+                                            random_state=self.random_state, verbose=False).fit(self.X, self.lengths)
+                logL = hmm_model.score(self.X, self.lengths)                
+                p = math.pow(n_states, 2) * n_states + 2 * len(self.X[0]) - 1
+                logN = math.log(len(self.lengths))
+                BIC = -2 * logL + p * logN
+                if BIC < lowest_BIC:
+                    lowest_BIC = BIC
+                    best_model = hmm_model
+       
+        except:
+            pass
+        
+        return best_model
+            
+            
 class SelectorDIC(ModelSelector):
     ''' select best model based on Discriminative Information Criterion
 
@@ -91,10 +111,41 @@ class SelectorDIC(ModelSelector):
 
     def select(self):
         warnings.filterwarnings("ignore", category=DeprecationWarning)
-
         # TODO implement model selection based on DIC scores
-        raise NotImplementedError
+        results = {}
+        antiRes = {}
+        try:    
+            highest_DIC = float("-inf")
+            best_model = None
+            hmm_model=None
+            
+            for n_states in range(self.min_n_components,self.max_n_components+1):
+                antiLogL = 0.0
+                wc = 0
+                hmm_model = GaussianHMM(n_components=n_states, covariance_type="diag",
+                                        random_state=self.random_state, verbose=False).fit(self.X, self.lengths)
+                logL = hmm_model.score(self.X, self.lengths)             
+            
+                for word in self.hwords:
+                    if word == self.this_word:
+                        continue
+                    X, lengths = self.hwords[word]
+                    antiLogL += hmm_model.score(X, lengths)
+                    wc += 1
 
+                # normalize
+                antiLogL /= float(wc)
+            
+                results[n_states] = logL
+                antiRes[n_states] = antiLogL
+            
+                DIC = logL - antiLogL
+                if DIC > highest_DIC:
+                    DIC = highest_DIC
+                    best_model = hmm_model      
+        except:
+            pass   
+        return best_model
 
 class SelectorCV(ModelSelector):
     ''' select best model based on average log Likelihood of cross-validation folds
@@ -105,4 +156,34 @@ class SelectorCV(ModelSelector):
         warnings.filterwarnings("ignore", category=DeprecationWarning)
 
         # TODO implement model selection using CV
-        raise NotImplementedError
+        #split_method = KFold()
+        #cv_train_idx, cv_test_idx = split_method.split(self.sequences)
+        best_score, best_n_states = float("-inf"), None
+        n_splits = 3
+        
+        for n_states in range(self.min_n_components, self.max_n_components+1):
+            scores = []
+            split_method = KFold(n_splits=n_splits)
+            logL = None
+            try: 
+                if len(self.sequences) < n_splits:
+                    break
+                for train_idx, test_idx in split_method.split(self_sequences):
+                    X_train, lengths_train = combine_sequences(train_idx, self.sequences)
+                    hmm_model = GaussianHMM(n_components=n_states, covariance_type="diag", n_iter=1000,
+                                        random_state=self.random_state, verbose=False).fit(X_train, lenghts_train)
+                    X, length = combine_sequences(test_idx, self.sequences)
+                    
+                    logL = hmm_model.score(X, length)
+                    scores.append(logL)
+                
+                score = np.mean(scores)
+                
+                if score > best_score:
+                    best_score = score
+                    best_n_states = n_states
+            except:
+                pass
+        return self.base_model(best_n_states) if best_n_states is not None else self.base_model(self.n_constant)
+                   
+                    
