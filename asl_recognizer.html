@@ -13063,7 +13063,7 @@ feature sets.  The test simply looks for some valid values but is not exhaustive
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>....
 ----------------------------------------------------------------------
-Ran 4 tests in 0.042s
+Ran 4 tests in 0.037s
 
 OK
 </pre>
@@ -13147,7 +13147,7 @@ OK
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of states trained in model for BOOK is 3
-logL = -2331.113812743319
+logL = -2331.1138127433164
 </pre>
 </div>
 </div>
@@ -13201,12 +13201,12 @@ mean =  [ -3.46504869  50.66686933  14.02391587  52.04731066]
 variance =  [ 49.12346305  43.04799144  39.35109609  47.24195772]
 
 hidden state #1
-mean =  [ -11.45300909   94.109178     19.03512475  102.2030162 ]
-variance =  [  77.403668    203.35441965   26.68898447  156.12444034]
-
-hidden state #2
 mean =  [ -1.12415027  69.44164191  17.02866283  77.7231196 ]
 variance =  [ 19.70434594  16.83041492  30.51552305  11.03678246]
+
+hidden state #2
+mean =  [ -11.45300909   94.109178     19.03512475  102.2030162 ]
+variance =  [  77.403668    203.35441965   26.68898447  156.12444034]
 
 </pre>
 </div>
@@ -14572,11 +14572,11 @@ Train fold indices:[0 1 2 3] Test fold indices:[4 5]
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training complete for FISH with 3 states with time 0.027386588854254656 seconds
-Training complete for BOOK with 3 states with time 0.12338590734561622 seconds
-Training complete for VEGETABLE with 3 states with time 0.041394465205597 seconds
-Training complete for FUTURE with 3 states with time 0.09433352252724753 seconds
-Training complete for JOHN with 3 states with time 1.0275790329351366 seconds
+<pre>Training complete for FISH with 3 states with time 0.0262986383170021 seconds
+Training complete for BOOK with 3 states with time 0.10735505881604297 seconds
+Training complete for VEGETABLE with 3 states with time 0.036724488842861974 seconds
+Training complete for FUTURE with 3 states with time 0.07773355270247942 seconds
+Training complete for JOHN with 3 states with time 0.9717250892683942 seconds
 </pre>
 </div>
 </div>
@@ -14623,11 +14623,11 @@ Training complete for JOHN with 3 states with time 1.0275790329351366 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
-Training complete for FISH with 5 states with time 0.1458017938867453 seconds
-Training complete for BOOK with 5 states with time 2.4159352936286123 seconds
-Training complete for VEGETABLE with 4 states with time 1.5027096126588155 seconds
-Training complete for FUTURE with 4 states with time 2.28735288291497 seconds
-Training complete for JOHN with 7 states with time 16.125927708765904 seconds
+Training complete for FISH with 5 states with time 0.14201038890126227 seconds
+Training complete for BOOK with 5 states with time 2.345117411416707 seconds
+Training complete for VEGETABLE with 4 states with time 1.1591102001521083 seconds
+Training complete for FUTURE with 4 states with time 2.0437012282551024 seconds
+Training complete for JOHN with 7 states with time 11.804338767269932 seconds
 </pre>
 </div>
 </div>
@@ -14674,11 +14674,11 @@ Training complete for JOHN with 7 states with time 16.125927708765904 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
-Training complete for FISH with 5 states with time 1.1042887831273234 seconds
-Training complete for BOOK with 15 states with time 5.79173393656427 seconds
-Training complete for VEGETABLE with 15 states with time 4.988348665567081 seconds
-Training complete for FUTURE with 15 states with time 5.431111177254856 seconds
-Training complete for JOHN with 15 states with time 15.777579802711458 seconds
+Training complete for FISH with 5 states with time 0.9955984189820626 seconds
+Training complete for BOOK with 15 states with time 5.583004980965995 seconds
+Training complete for VEGETABLE with 15 states with time 4.8170021009761825 seconds
+Training complete for FUTURE with 15 states with time 5.244184339875751 seconds
+Training complete for JOHN with 15 states with time 13.956279270744702 seconds
 </pre>
 </div>
 </div>
@@ -14732,7 +14732,7 @@ Training complete for JOHN with 15 states with time 15.777579802711458 seconds
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>....
 ----------------------------------------------------------------------
-Ran 4 tests in 29.534s
+Ran 4 tests in 26.979s
 
 OK
 </pre>
@@ -14897,7 +14897,7 @@ Number of test set sentences: 40
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
 <span class="o">%</span><span class="k">autoreload</span> 2
 <span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_ground</span> <span class="c1"># change as needed</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features_polar</span> <span class="c1"># change as needed</span>
 <span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorBIC</span> <span class="c1"># change as needed</span>
 
 <span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
@@ -14922,50 +14922,50 @@ Number of test set sentences: 40
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
 
-**** WER = 0.9662921348314607
-Total correct: 6 out of 178
+**** WER = 0.5449438202247191
+Total correct: 81 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: JOHN *JOHN *JOHN                                              JOHN WRITE HOMEWORK
-    7: JOHN *GO1 *GO1 *GO1                                           JOHN CAN GO CAN
-   12: *GO1 *WHAT *WHAT *WHAT                                        JOHN CAN GO CAN
-   21: *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT               JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *WHAT *IX IX *WHO *WHO                                        JOHN LIKE IX IX IX
-   28: *WHO *WHO *WHO *WHO *WHO                                      JOHN LIKE IX IX IX
-   30: *WHO LIKE *LIKE *LIKE *LIKE                                   JOHN LIKE IX IX IX
-   36: *LIKE *LIKE *LIKE *LIKE LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX THINK MARY LOVE
-   43: *LIKE *LIKE *LIKE *LIKE                                       JOHN MUST BUY HOUSE
-   50: *LIKE *LIKE *LIKE *LIKE *LIKE                                 FUTURE JOHN BUY CAR SHOULD
-   54: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *LIKE *LIKE *LIKE *LIKE                                       JOHN DECIDE VISIT MARY
-   67: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN FUTURE NOT BUY HOUSE
-   71: *LIKE *LIKE *LIKE *LIKE                                       JOHN WILL VISIT MARY
-   74: *LIKE *LIKE *LIKE *LIKE                                       JOHN NOT VISIT MARY
-   77: *LIKE *LIKE *LIKE                                             ANN BLAME MARY
-   84: *LIKE *LIKE *LIKE *LIKE                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                     JOHN IX GIVE MAN IX NEW COAT
-   90: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *LIKE *LIKE *LIKE *LIKE                                       POSS NEW CAR BREAK-DOWN
-  105: *LIKE *LIKE                                                   JOHN LEG
-  107: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN POSS FRIEND HAVE CANDY
-  108: *LIKE *LIKE                                                   WOMAN ARRIVE
-  113: *LIKE *LIKE *LIKE *LIKE *LIKE                                 IX CAR BLUE SUE BUY
-  119: *LIKE *LIKE *LIKE *LIKE *LIKE                                 SUE BUY IX CAR BLUE
-  122: *LIKE *LIKE *LIKE                                             JOHN READ BOOK
-  139: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *LIKE *LIKE *LIKE                                             LOVE JOHN WHO
-  167: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX SAY LOVE MARY
-  171: *LIKE *LIKE *LIKE                                             JOHN MARY BLAME
-  174: *LIKE *LIKE *LIKE *LIKE *LIKE                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *LIKE *LIKE                                                   JOHN ARRIVE
-  184: *LIKE *LIKE *LIKE *LIKE *LIKE                                 ALL BOY GIVE TEACHER APPLE
-  189: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  193: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  199: LIKE *LIKE *LIKE                                              LIKE CHOCOLATE WHO
-  201: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN TELL MARY IX-1P BUY HOUSE
+    2: JOHN *BOOK *GIVE1                                             JOHN WRITE HOMEWORK
+    7: JOHN *PEOPLE *IX *ARRIVE                                      JOHN CAN GO CAN
+   12: *IX *HAVE *GO1 *WHAT                                          JOHN CAN GO CAN
+   21: JOHN *NEW WONT *FUTURE *CAR *CAR *FUTURE *WHO                 JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX IX *WHO IX                                           JOHN LIKE IX IX IX
+   28: JOHN *WHO IX IX IX                                            JOHN LIKE IX IX IX
+   30: *IX LIKE *MARY *MARY *MARY                                    JOHN LIKE IX IX IX
+   36: *VISIT VEGETABLE *YESTERDAY *GIVE *MARY *MARY                 MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN *VISIT *PREFER *JOHN *MARY                               JOHN IX THINK MARY LOVE
+   43: JOHN *JOHN BUY HOUSE                                          JOHN MUST BUY HOUSE
+   50: *JOHN *SEE BUY CAR *ARRIVE                                    FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD NOT BUY HOUSE                                     JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *VISIT VISIT MARY                                       JOHN DECIDE VISIT MARY
+   67: *IX FUTURE *WHO BUY HOUSE                                     JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *FINISH *GO MARY                                         JOHN WILL VISIT MARY
+   74: *IX *VISIT *GIVE MARY                                         JOHN NOT VISIT MARY
+   77: *JOHN BLAME MARY                                              ANN BLAME MARY
+   84: *ARRIVE *GIVE1 *POSS BOOK                                     IX-1P FIND SOMETHING-ONE BOOK
+   89: *GIVE *GIVE *IX *IX IX *ARRIVE *BOOK                          JOHN IX GIVE MAN IX NEW COAT
+   90: *SOMETHING-ONE *SOMETHING-ONE IX *IX WOMAN BOOK               JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *IX IX *WOMAN WOMAN BOOK                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
+  105: JOHN *VEGETABLE                                               JOHN LEG
+  107: *LIKE POSS *HAVE *GO *JANA                                    JOHN POSS FRIEND HAVE CANDY
+  108: WOMAN ARRIVE                                                  WOMAN ARRIVE
+  113: IX CAR *SUE *POSS *ARRIVE                                     IX CAR BLUE SUE BUY
+  119: *PREFER *BUY1 IX *BLAME *GO                                   SUE BUY IX CAR BLUE
+  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
+  139: JOHN *BUY1 *CAR *BLAME BOOK                                   JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: *MARY IX *VISIT *WOMAN MARY                                   JOHN IX SAY LOVE MARY
+  171: *MARY *VISIT BLAME                                            JOHN MARY BLAME
+  174: *JOHN *GIVE3 GIVE1 *GIVE *WHAT                                PEOPLE GROUP GIVE1 JANA TOY
+  181: *EAT ARRIVE                                                   JOHN ARRIVE
+  184: ALL BOY *GIVE1 TEACHER APPLE                                  ALL BOY GIVE TEACHER APPLE
+  189: *MARY *VISIT *YESTERDAY *ARRIVE                               JOHN GIVE GIRL BOX
+  193: JOHN *SOMETHING-ONE *GIVE BOX                                 JOHN GIVE GIRL BOX
+  199: *JOHN *VIDEOTAPE WHO                                          LIKE CHOCOLATE WHO
+  201: JOHN *GIVE *IX *WOMAN BUY HOUSE                               JOHN TELL MARY IX-1P BUY HOUSE
 </pre>
 </div>
 </div>
@@ -14982,7 +14982,7 @@ Video  Recognized                                                    Correct
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
 <span class="o">%</span><span class="k">autoreload</span> 2
 <span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_norm</span> <span class="c1"># change as needed</span>
+<span class="n">features</span> <span class="o">=</span> <span class="n">features_custom</span> <span class="c1"># change as needed</span>
 <span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorBIC</span> <span class="c1"># change as needed</span>
 
 <span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
@@ -15007,50 +15007,50 @@ Video  Recognized                                                    Correct
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
 
-**** WER = 0.949438202247191
-Total correct: 9 out of 178
+**** WER = 0.550561797752809
+Total correct: 80 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: JOHN WRITE *WRITE                                             JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *JOHN *JOHN *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   28: *LIKE LIKE *LIKE *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   30: *LIKE LIKE *LIKE *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   36: *LIKE *JOHN *JOHN *JOHN *JOHN *JOHN                           MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *JOHN *JOHN *VEGETABLE *VEGETABLE                        JOHN IX THINK MARY LOVE
-   43: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE                   JOHN MUST BUY HOUSE
-   50: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE        FUTURE JOHN BUY CAR SHOULD
-   54: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE        JOHN SHOULD NOT BUY HOUSE
-   57: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE                   JOHN DECIDE VISIT MARY
-   67: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE        JOHN FUTURE NOT BUY HOUSE
-   71: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE                   JOHN WILL VISIT MARY
-   74: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE                   JOHN NOT VISIT MARY
-   77: *VEGETABLE *VEGETABLE *VEGETABLE                              ANN BLAME MARY
-   84: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE                   IX-1P FIND SOMETHING-ONE BOOK
-   89: *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE *VEGETABLE  JOHN IX GIVE MAN IX NEW COAT
-   90: *SELF *SELF *SELF *SELF *SELF *SELF                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *SELF *SELF *SELF *SELF *SELF *SELF                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *SELF *SELF *SELF *SELF                                       POSS NEW CAR BREAK-DOWN
-  105: *SELF *SELF                                                   JOHN LEG
-  107: *SELF *SELF *SELF *SELF *SELF                                 JOHN POSS FRIEND HAVE CANDY
-  108: *SELF *SELF                                                   WOMAN ARRIVE
-  113: *SELF *SELF *SELF *SELF *SELF                                 IX CAR BLUE SUE BUY
-  119: *SELF *SELF *SELF *SELF *SELF                                 SUE BUY IX CAR BLUE
-  122: *SELF *SELF *SELF                                             JOHN READ BOOK
-  139: *SELF *SELF *SELF *SELF *SELF                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *SELF *SELF *SELF *SELF *SELF                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *SELF *SELF *SELF                                             LOVE JOHN WHO
-  167: *SELF *SELF *SELF *SELF *SELF                                 JOHN IX SAY LOVE MARY
-  171: *SELF *SELF *SELF                                             JOHN MARY BLAME
-  174: *SELF *SELF *SELF *SELF *SELF                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *SELF *SELF                                                   JOHN ARRIVE
-  184: *SELF *SELF *SELF *SELF *SELF                                 ALL BOY GIVE TEACHER APPLE
-  189: *SELF *SELF *SELF *SELF                                       JOHN GIVE GIRL BOX
-  193: *SELF *SELF *SELF *SELF                                       JOHN GIVE GIRL BOX
-  199: *SELF *SELF *SELF                                             LIKE CHOCOLATE WHO
-  201: *SELF *SELF *SELF *SELF *SELF *SELF                           JOHN TELL MARY IX-1P BUY HOUSE
+    2: *IX *IX HOMEWORK                                              JOHN WRITE HOMEWORK
+    7: JOHN *VISIT *GIVE1 *TEACHER                                   JOHN CAN GO CAN
+   12: JOHN CAN *GO1 CAN                                             JOHN CAN GO CAN
+   21: JOHN FISH WONT *MARY *CAR *GO *FUTURE *MARY                   JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX IX IX IX                                             JOHN LIKE IX IX IX
+   28: JOHN *MARY IX IX IX                                           JOHN LIKE IX IX IX
+   30: JOHN *IX IX *JOHN IX                                          JOHN LIKE IX IX IX
+   36: *JOHN *SEE *IX IX *MARY *JOHN                                 MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN IX *JOHN MARY *MARY                                      JOHN IX THINK MARY LOVE
+   43: JOHN *IX BUY HOUSE                                            JOHN MUST BUY HOUSE
+   50: *JOHN *IX BUY CAR *MARY                                       FUTURE JOHN BUY CAR SHOULD
+   54: JOHN *JOHN *JOHN BUY HOUSE                                    JOHN SHOULD NOT BUY HOUSE
+   57: JOHN *IX *IX *IX                                              JOHN DECIDE VISIT MARY
+   67: JOHN *IX *IX BUY HOUSE                                        JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *JOHN VISIT MARY                                         JOHN WILL VISIT MARY
+   74: JOHN *IX *IX *IX                                              JOHN NOT VISIT MARY
+   77: *JOHN BLAME MARY                                              ANN BLAME MARY
+   84: *JOHN *CAR *IX *NEW                                           IX-1P FIND SOMETHING-ONE BOOK
+   89: JOHN IX *IX *IX IX *CAR COAT                                  JOHN IX GIVE MAN IX NEW COAT
+   90: JOHN *JOHN *JOHN *IX *IX *MARY                                JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *IX IX *IX *IX *FINISH                                   JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: *JOHN NEW CAR BREAK-DOWN                                      POSS NEW CAR BREAK-DOWN
+  105: JOHN *JOHN                                                    JOHN LEG
+  107: JOHN POSS *LOVE HAVE *JOHN                                    JOHN POSS FRIEND HAVE CANDY
+  108: *IX ARRIVE                                                    WOMAN ARRIVE
+  113: *JOHN CAR *MARY *IX *BUY1                                     IX CAR BLUE SUE BUY
+  119: *JOHN *BUY1 *GO CAR *HAVE                                     SUE BUY IX CAR BLUE
+  122: JOHN READ *YESTERDAY                                          JOHN READ BOOK
+  139: JOHN *BUY1 WHAT *JOHN *ARRIVE                                 JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY *IX WHAT *YESTERDAY                                  JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN *JOHN                                               LOVE JOHN WHO
+  167: JOHN *JOHN *IX *CAN *HERE                                     JOHN IX SAY LOVE MARY
+  171: *IX *JOHN BLAME                                               JOHN MARY BLAME
+  174: *CAR *JOHN GIVE1 *JOHN *FINISH                                PEOPLE GROUP GIVE1 JANA TOY
+  181: JOHN ARRIVE                                                   JOHN ARRIVE
+  184: *IX *JOHN *GIVE1 TEACHER *MARY                                ALL BOY GIVE TEACHER APPLE
+  189: JOHN *IX *JOHN *ARRIVE                                        JOHN GIVE GIRL BOX
+  193: JOHN *IX *IX BOX                                              JOHN GIVE GIRL BOX
+  199: *JOHN *JOHN *JOHN                                             LIKE CHOCOLATE WHO
+  201: JOHN *MARY MARY *IX BUY HOUSE                                 JOHN TELL MARY IX-1P BUY HOUSE
 </pre>
 </div>
 </div>
@@ -15068,261 +15068,6 @@ Video  Recognized                                                    Correct
 <span class="o">%</span><span class="k">autoreload</span> 2
 <span class="c1"># TODO Choose a feature set and model selector</span>
 <span class="n">features</span> <span class="o">=</span> <span class="n">features_polar</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorBIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9382022471910112
-Total correct: 11 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *BOOK *BOOK                                              JOHN WRITE HOMEWORK
-    7: JOHN *PEOPLE *PEOPLE *PEOPLE                                  JOHN CAN GO CAN
-   12: *PEOPLE *HAVE *HAVE *HAVE                                     JOHN CAN GO CAN
-   21: *HAVE *HAVE *HAVE *HAVE *HAVE *HAVE *HAVE *HAVE               JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *HAVE *IX IX IX IX                                            JOHN LIKE IX IX IX
-   28: *IX *IX IX IX IX                                              JOHN LIKE IX IX IX
-   30: *IX LIKE *LIKE *LIKE *LIKE                                    JOHN LIKE IX IX IX
-   36: *LIKE *LIKE *LIKE *LIKE LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX THINK MARY LOVE
-   43: *LIKE *LIKE *LIKE *LIKE                                       JOHN MUST BUY HOUSE
-   50: *LIKE *LIKE *LIKE *LIKE *LIKE                                 FUTURE JOHN BUY CAR SHOULD
-   54: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *LIKE *LIKE *LIKE *LIKE                                       JOHN DECIDE VISIT MARY
-   67: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN FUTURE NOT BUY HOUSE
-   71: *LIKE *LIKE *LIKE *LIKE                                       JOHN WILL VISIT MARY
-   74: *LIKE *LIKE *LIKE *LIKE                                       JOHN NOT VISIT MARY
-   77: *LIKE *LIKE *LIKE                                             ANN BLAME MARY
-   84: *LIKE *LIKE *LIKE *LIKE                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                     JOHN IX GIVE MAN IX NEW COAT
-   90: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *LIKE *LIKE *LIKE *LIKE                                       POSS NEW CAR BREAK-DOWN
-  105: *LIKE *LIKE                                                   JOHN LEG
-  107: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN POSS FRIEND HAVE CANDY
-  108: *LIKE *LIKE                                                   WOMAN ARRIVE
-  113: *LIKE *LIKE *LIKE *LIKE *LIKE                                 IX CAR BLUE SUE BUY
-  119: *LIKE *LIKE *LIKE *LIKE *LIKE                                 SUE BUY IX CAR BLUE
-  122: *LIKE *LIKE *LIKE                                             JOHN READ BOOK
-  139: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *LIKE *LIKE *LIKE                                             LOVE JOHN WHO
-  167: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX SAY LOVE MARY
-  171: *LIKE *LIKE *LIKE                                             JOHN MARY BLAME
-  174: *LIKE *LIKE *LIKE *LIKE *LIKE                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *LIKE *LIKE                                                   JOHN ARRIVE
-  184: *LIKE *LIKE *LIKE *LIKE *LIKE                                 ALL BOY GIVE TEACHER APPLE
-  189: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  193: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  199: LIKE *LIKE *LIKE                                              LIKE CHOCOLATE WHO
-  201: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_delta</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorBIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.8370786516853933
-Total correct: 29 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *JOHN *JOHN                                              JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   28: JOHN *MARY *MARY *MARY *MARY                                  JOHN LIKE IX IX IX
-   30: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   36: *JOHN *JOHN *JOHN *JOHN *JOHN *MARY                           MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *JOHN *JOHN                                        JOHN MUST BUY HOUSE
-   50: *JOHN JOHN *JOHN *JOHN *JOHN                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *JOHN *JOHN                                        JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN *JOHN *JOHN                                        JOHN WILL VISIT MARY
-   74: JOHN *JOHN *JOHN *JOHN                                        JOHN NOT VISIT MARY
-   77: *JOHN *JOHN *JOHN                                             ANN BLAME MARY
-   84: *JOHN *JOHN *JOHN *JOHN                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                      JOHN IX GIVE MAN IX NEW COAT
-   90: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *JOHN *JOHN *JOHN *JOHN                                       POSS NEW CAR BREAK-DOWN
-  105: JOHN *JOHN                                                    JOHN LEG
-  107: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN POSS FRIEND HAVE CANDY
-  108: *JOHN *JOHN                                                   WOMAN ARRIVE
-  113: *JOHN *JOHN *JOHN *JOHN *JOHN                                 IX CAR BLUE SUE BUY
-  119: *JOHN *JOHN *JOHN *JOHN *JOHN                                 SUE BUY IX CAR BLUE
-  122: JOHN *JOHN *JOHN                                              JOHN READ BOOK
-  139: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY WHAT YESTERDAY BOOK
-  142: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY YESTERDAY WHAT BOOK
-  158: *JOHN JOHN *JOHN                                              LOVE JOHN WHO
-  167: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX SAY LOVE MARY
-  171: JOHN *JOHN *JOHN                                              JOHN MARY BLAME
-  174: *JOHN *JOHN *JOHN *JOHN *JOHN                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: JOHN *JOHN                                                    JOHN ARRIVE
-  184: *JOHN *JOHN *JOHN *JOHN *JOHN                                 ALL BOY GIVE TEACHER APPLE
-  189: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  193: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  199: *JOHN *JOHN *JOHN                                             LIKE CHOCOLATE WHO
-  201: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_custom</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorBIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.8370786516853933
-Total correct: 29 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: *IX *IX *IX                                                   JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   28: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   30: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   36: *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                           MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *JOHN *JOHN                                        JOHN MUST BUY HOUSE
-   50: *JOHN JOHN *JOHN *JOHN *JOHN                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *JOHN *JOHN                                        JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN *JOHN *JOHN                                        JOHN WILL VISIT MARY
-   74: JOHN *JOHN *JOHN *JOHN                                        JOHN NOT VISIT MARY
-   77: *JOHN *JOHN *JOHN                                             ANN BLAME MARY
-   84: *JOHN *JOHN *JOHN *JOHN                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                      JOHN IX GIVE MAN IX NEW COAT
-   90: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *JOHN *JOHN *JOHN *JOHN                                       POSS NEW CAR BREAK-DOWN
-  105: JOHN *JOHN                                                    JOHN LEG
-  107: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN POSS FRIEND HAVE CANDY
-  108: *JOHN *JOHN                                                   WOMAN ARRIVE
-  113: *JOHN *JOHN *JOHN *JOHN *JOHN                                 IX CAR BLUE SUE BUY
-  119: *JOHN *JOHN *JOHN *JOHN *JOHN                                 SUE BUY IX CAR BLUE
-  122: JOHN *JOHN *JOHN                                              JOHN READ BOOK
-  139: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY WHAT YESTERDAY BOOK
-  142: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY YESTERDAY WHAT BOOK
-  158: *JOHN JOHN *JOHN                                              LOVE JOHN WHO
-  167: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX SAY LOVE MARY
-  171: JOHN *JOHN *JOHN                                              JOHN MARY BLAME
-  174: *JOHN *JOHN *JOHN *JOHN *JOHN                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: JOHN *JOHN                                                    JOHN ARRIVE
-  184: *JOHN *JOHN *JOHN *JOHN *JOHN                                 ALL BOY GIVE TEACHER APPLE
-  189: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  193: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  199: *JOHN *JOHN *JOHN                                             LIKE CHOCOLATE WHO
-  201: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_ground</span> <span class="c1"># change as needed</span>
 <span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorDIC</span> <span class="c1"># change as needed</span>
 
 <span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
@@ -15347,815 +15092,50 @@ Video  Recognized                                                    Correct
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
 
-**** WER = 0.9325842696629213
-Total correct: 12 out of 178
+**** WER = 0.5393258426966292
+Total correct: 82 out of 178
 Video  Recognized                                                    Correct
 =====================================================================================================
-    2: JOHN *NEW *NEW                                                JOHN WRITE HOMEWORK
-    7: *NEW CAN *CAN CAN                                             JOHN CAN GO CAN
-   12: *CAN *WHAT *WHAT *WHAT                                        JOHN CAN GO CAN
-   21: *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT               JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *WHAT *WHAT *WHAT *WHAT *WHAT                                 JOHN LIKE IX IX IX
-   28: *WHAT *WHAT *WHAT *WHAT *WHAT                                 JOHN LIKE IX IX IX
-   30: *WHAT *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   36: MARY *MARY *MARY *MARY *MARY *MARY                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *MARY *MARY *MARY MARY *MARY                                  JOHN IX THINK MARY LOVE
-   43: *MARY *MARY *MARY *MARY                                       JOHN MUST BUY HOUSE
-   50: *MARY *MARY *MARY *MARY *MARY                                 FUTURE JOHN BUY CAR SHOULD
-   54: *MARY *MARY *MARY *MARY *MARY                                 JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *MARY *MARY MARY                                        JOHN DECIDE VISIT MARY
-   67: *MARY *MARY *MARY *MARY *MARY                                 JOHN FUTURE NOT BUY HOUSE
-   71: *MARY *MARY *MARY MARY                                        JOHN WILL VISIT MARY
-   74: *MARY *MARY *MARY MARY                                        JOHN NOT VISIT MARY
-   77: *MARY *MARY MARY                                              ANN BLAME MARY
-   84: *MARY *MARY *MARY *MARY                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *MARY *MARY *MARY *MARY *MARY *MARY *MARY                     JOHN IX GIVE MAN IX NEW COAT
-   90: *MARY *MARY *MARY *MARY *MARY *MARY                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *MARY *MARY *MARY *MARY *MARY *MARY                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *MARY *MARY *MARY *MARY                                       POSS NEW CAR BREAK-DOWN
-  105: *MARY *MARY                                                   JOHN LEG
-  107: *MARY *MARY *MARY *MARY *MARY                                 JOHN POSS FRIEND HAVE CANDY
-  108: *MARY *MARY                                                   WOMAN ARRIVE
-  113: *MARY *MARY *MARY *MARY *MARY                                 IX CAR BLUE SUE BUY
-  119: *MARY *MARY *MARY *MARY *MARY                                 SUE BUY IX CAR BLUE
-  122: *MARY *MARY *MARY                                             JOHN READ BOOK
-  139: *MARY *MARY *MARY *MARY *MARY                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *MARY *MARY *MARY *MARY *MARY                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *MARY *MARY *MARY                                             LOVE JOHN WHO
-  167: *MARY *MARY *MARY *MARY MARY                                  JOHN IX SAY LOVE MARY
-  171: *MARY MARY *MARY                                              JOHN MARY BLAME
-  174: *MARY *MARY *MARY *MARY *MARY                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *MARY *MARY                                                   JOHN ARRIVE
-  184: *MARY *MARY *MARY *MARY *MARY                                 ALL BOY GIVE TEACHER APPLE
-  189: *MARY *MARY *MARY *MARY                                       JOHN GIVE GIRL BOX
-  193: *MARY *MARY *MARY *MARY                                       JOHN GIVE GIRL BOX
-  199: *MARY *MARY *MARY                                             LIKE CHOCOLATE WHO
-  201: *MARY *MARY MARY *MARY *MARY *MARY                            JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_norm</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorDIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9550561797752809
-Total correct: 8 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN WRITE *WRITE                                             JOHN WRITE HOMEWORK
-    7: *MARY *MARY *MARY *MARY                                       JOHN CAN GO CAN
-   12: *MARY *MARY *MARY *MARY                                       JOHN CAN GO CAN
-   21: *MARY *MARY *MARY *MARY *MARY *MARY *MARY *MARY               JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   28: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   30: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   36: MARY *MARY *MARY *MARY *MARY *MARY                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *MARY *MARY *MARY MARY *MARY                                  JOHN IX THINK MARY LOVE
-   43: *MARY *MARY *MARY *MARY                                       JOHN MUST BUY HOUSE
-   50: *MARY *MARY *MARY *MARY *MARY                                 FUTURE JOHN BUY CAR SHOULD
-   54: *MARY *MARY *MARY *MARY *MARY                                 JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *MARY *MARY MARY                                        JOHN DECIDE VISIT MARY
-   67: *MARY *MARY *MARY *MARY *MARY                                 JOHN FUTURE NOT BUY HOUSE
-   71: *MARY *MARY *MARY MARY                                        JOHN WILL VISIT MARY
-   74: *MARY *MARY *MARY MARY                                        JOHN NOT VISIT MARY
-   77: *MARY *MARY MARY                                              ANN BLAME MARY
-   84: *MARY *MARY *MARY *MARY                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *MARY *MARY *MARY *MARY *MARY *MARY *MARY                     JOHN IX GIVE MAN IX NEW COAT
-   90: *PREFER *PREFER *PREFER *PREFER *PREFER *PREFER               JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *PREFER *PREFER *PREFER *PREFER *PREFER *PREFER               JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *PREFER *PREFER *PREFER *PREFER                               POSS NEW CAR BREAK-DOWN
-  105: *PREFER *PREFER                                               JOHN LEG
-  107: *PREFER *PREFER *PREFER *PREFER *PREFER                       JOHN POSS FRIEND HAVE CANDY
-  108: *PREFER *PREFER                                               WOMAN ARRIVE
-  113: *PREFER *PREFER *PREFER *PREFER *PREFER                       IX CAR BLUE SUE BUY
-  119: *PREFER *PREFER *PREFER *PREFER *PREFER                       SUE BUY IX CAR BLUE
-  122: *PREFER *PREFER *PREFER                                       JOHN READ BOOK
-  139: *PREFER *PREFER *PREFER *PREFER *PREFER                       JOHN BUY WHAT YESTERDAY BOOK
-  142: *PREFER *PREFER *PREFER *PREFER *PREFER                       JOHN BUY YESTERDAY WHAT BOOK
-  158: *PREFER *PREFER *PREFER                                       LOVE JOHN WHO
-  167: *PREFER *PREFER *PREFER *PREFER *PREFER                       JOHN IX SAY LOVE MARY
-  171: *PREFER *PREFER *PREFER                                       JOHN MARY BLAME
-  174: *PREFER *PREFER *PREFER *PREFER *PREFER                       PEOPLE GROUP GIVE1 JANA TOY
-  181: *PREFER *PREFER                                               JOHN ARRIVE
-  184: *PREFER *PREFER *PREFER *PREFER *PREFER                       ALL BOY GIVE TEACHER APPLE
-  189: *PREFER *PREFER *PREFER *PREFER                               JOHN GIVE GIRL BOX
-  193: *PREFER *PREFER *PREFER *PREFER                               JOHN GIVE GIRL BOX
-  199: *PREFER *PREFER *PREFER                                       LIKE CHOCOLATE WHO
-  201: *PREFER *PREFER *PREFER *PREFER *PREFER *PREFER               JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_polar</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorDIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9719101123595506
-Total correct: 5 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *BROTHER *BROTHER                                        JOHN WRITE HOMEWORK
-    7: JOHN *HAVE *HAVE *HAVE                                        JOHN CAN GO CAN
-   12: *HAVE *WHAT *WHAT *WHAT                                       JOHN CAN GO CAN
-   21: *WHAT *WHAT *WHAT *FUTURE *FUTURE *FUTURE *FUTURE *FUTURE     JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *FUTURE *FUTURE *FUTURE *WHO *WHO                             JOHN LIKE IX IX IX
-   28: *WHO *WHO *WHO *WHO *WHO                                      JOHN LIKE IX IX IX
-   30: *WHO LIKE *LIKE *LIKE *LIKE                                   JOHN LIKE IX IX IX
-   36: *LIKE *LIKE *LIKE *LIKE LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX THINK MARY LOVE
-   43: *LIKE *LIKE *LIKE *LIKE                                       JOHN MUST BUY HOUSE
-   50: *LIKE *LIKE *LIKE *LIKE *LIKE                                 FUTURE JOHN BUY CAR SHOULD
-   54: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *LIKE *LIKE *LIKE *LIKE                                       JOHN DECIDE VISIT MARY
-   67: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN FUTURE NOT BUY HOUSE
-   71: *LIKE *LIKE *LIKE *LIKE                                       JOHN WILL VISIT MARY
-   74: *LIKE *LIKE *LIKE *LIKE                                       JOHN NOT VISIT MARY
-   77: *LIKE *LIKE *LIKE                                             ANN BLAME MARY
-   84: *LIKE *LIKE *LIKE *LIKE                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                     JOHN IX GIVE MAN IX NEW COAT
-   90: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *LIKE *LIKE *LIKE *LIKE                                       POSS NEW CAR BREAK-DOWN
-  105: *LIKE *LIKE                                                   JOHN LEG
-  107: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN POSS FRIEND HAVE CANDY
-  108: *LIKE *LIKE                                                   WOMAN ARRIVE
-  113: *LIKE *LIKE *LIKE *LIKE *LIKE                                 IX CAR BLUE SUE BUY
-  119: *LIKE *LIKE *LIKE *LIKE *LIKE                                 SUE BUY IX CAR BLUE
-  122: *LIKE *LIKE *LIKE                                             JOHN READ BOOK
-  139: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *LIKE *LIKE *LIKE                                             LOVE JOHN WHO
-  167: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX SAY LOVE MARY
-  171: *LIKE *LIKE *LIKE                                             JOHN MARY BLAME
-  174: *LIKE *LIKE *LIKE *LIKE *LIKE                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *LIKE *LIKE                                                   JOHN ARRIVE
-  184: *LIKE *LIKE *LIKE *LIKE *LIKE                                 ALL BOY GIVE TEACHER APPLE
-  189: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  193: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  199: LIKE *LIKE *LIKE                                              LIKE CHOCOLATE WHO
-  201: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_delta</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorDIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.8707865168539326
-Total correct: 23 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *JOHN *JOHN                                              JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *MARY *MARY *MARY *MARY *MARY                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   28: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   30: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   36: *JOHN *JOHN *JOHN *JOHN *JOHN *MARY                           MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *MARY *MARY *MARY MARY *MARY                                  JOHN IX THINK MARY LOVE
-   43: *MARY *MARY *MARY *MARY                                       JOHN MUST BUY HOUSE
-   50: *MARY *MARY *MARY *MARY *MARY                                 FUTURE JOHN BUY CAR SHOULD
-   54: *MARY *MARY *MARY *MARY *MARY                                 JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *MARY *MARY MARY                                        JOHN DECIDE VISIT MARY
-   67: *MARY *MARY *MARY *MARY *MARY                                 JOHN FUTURE NOT BUY HOUSE
-   71: *MARY *MARY *MARY MARY                                        JOHN WILL VISIT MARY
-   74: *MARY *MARY *MARY MARY                                        JOHN NOT VISIT MARY
-   77: *MARY *MARY MARY                                              ANN BLAME MARY
-   84: *MARY *MARY *MARY *MARY                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *MARY *MARY *MARY *MARY *MARY *MARY *MARY                     JOHN IX GIVE MAN IX NEW COAT
-   90: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *JOHN *JOHN *JOHN *JOHN                                       POSS NEW CAR BREAK-DOWN
-  105: JOHN *JOHN                                                    JOHN LEG
-  107: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN POSS FRIEND HAVE CANDY
-  108: *JOHN *JOHN                                                   WOMAN ARRIVE
-  113: *JOHN *JOHN *JOHN *JOHN *JOHN                                 IX CAR BLUE SUE BUY
-  119: *JOHN *JOHN *JOHN *JOHN *JOHN                                 SUE BUY IX CAR BLUE
-  122: JOHN *JOHN *JOHN                                              JOHN READ BOOK
-  139: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY WHAT YESTERDAY BOOK
-  142: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY YESTERDAY WHAT BOOK
-  158: *JOHN JOHN *JOHN                                              LOVE JOHN WHO
-  167: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX SAY LOVE MARY
-  171: JOHN *JOHN *JOHN                                              JOHN MARY BLAME
-  174: *JOHN *JOHN *JOHN *JOHN *JOHN                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: JOHN *JOHN                                                    JOHN ARRIVE
-  184: *JOHN *JOHN *JOHN *JOHN *JOHN                                 ALL BOY GIVE TEACHER APPLE
-  189: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  193: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  199: *JOHN *JOHN *JOHN                                             LIKE CHOCOLATE WHO
-  201: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_custom</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorDIC</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.8314606741573034
-Total correct: 30 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *JOHN *JOHN                                              JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   28: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   30: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   36: *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                           MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *JOHN *JOHN                                        JOHN MUST BUY HOUSE
-   50: *JOHN JOHN *JOHN *JOHN *JOHN                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *JOHN *JOHN                                        JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN *JOHN *JOHN                                        JOHN WILL VISIT MARY
-   74: JOHN *JOHN *JOHN *JOHN                                        JOHN NOT VISIT MARY
-   77: *JOHN *JOHN *JOHN                                             ANN BLAME MARY
-   84: *JOHN *JOHN *JOHN *JOHN                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                      JOHN IX GIVE MAN IX NEW COAT
-   90: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *JOHN *JOHN *JOHN *JOHN                                       POSS NEW CAR BREAK-DOWN
-  105: JOHN *JOHN                                                    JOHN LEG
-  107: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN POSS FRIEND HAVE CANDY
-  108: *JOHN *JOHN                                                   WOMAN ARRIVE
-  113: *JOHN *JOHN *JOHN *JOHN *JOHN                                 IX CAR BLUE SUE BUY
-  119: *JOHN *JOHN *JOHN *JOHN *JOHN                                 SUE BUY IX CAR BLUE
-  122: JOHN *JOHN *JOHN                                              JOHN READ BOOK
-  139: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY WHAT YESTERDAY BOOK
-  142: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN BUY YESTERDAY WHAT BOOK
-  158: *JOHN JOHN *JOHN                                              LOVE JOHN WHO
-  167: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX SAY LOVE MARY
-  171: JOHN *JOHN *JOHN                                              JOHN MARY BLAME
-  174: *JOHN *JOHN *JOHN *JOHN *JOHN                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: JOHN *JOHN                                                    JOHN ARRIVE
-  184: *JOHN *JOHN *JOHN *JOHN *JOHN                                 ALL BOY GIVE TEACHER APPLE
-  189: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  193: JOHN *JOHN *JOHN *JOHN                                        JOHN GIVE GIRL BOX
-  199: *JOHN *JOHN *JOHN                                             LIKE CHOCOLATE WHO
-  201: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                            JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_ground</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorCV</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9775280898876404
-Total correct: 4 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: *GO WRITE *WRITE                                              JOHN WRITE HOMEWORK
-    7: *WRITE *GO1 *GO1 *GO1                                         JOHN CAN GO CAN
-   12: *GO1 *HAVE *HAVE *HAVE                                        JOHN CAN GO CAN
-   21: *HAVE *HAVE *HAVE *HAVE *HAVE *HAVE *HAVE *HAVE               JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *HAVE *TELL *TELL *TELL *TELL                                 JOHN LIKE IX IX IX
-   28: *TELL *TELL *TELL *TELL *TELL                                 JOHN LIKE IX IX IX
-   30: *TELL LIKE *LIKE *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   36: *LIKE *LIKE *LIKE *LIKE LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX THINK MARY LOVE
-   43: *LIKE *LIKE *LIKE *LIKE                                       JOHN MUST BUY HOUSE
-   50: *LIKE *LIKE *LIKE *LIKE *LIKE                                 FUTURE JOHN BUY CAR SHOULD
-   54: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *LIKE *LIKE *LIKE *LIKE                                       JOHN DECIDE VISIT MARY
-   67: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN FUTURE NOT BUY HOUSE
-   71: *LIKE *LIKE *LIKE *LIKE                                       JOHN WILL VISIT MARY
-   74: *LIKE *LIKE *LIKE *LIKE                                       JOHN NOT VISIT MARY
-   77: *LIKE *LIKE *LIKE                                             ANN BLAME MARY
-   84: *LIKE *LIKE *LIKE *LIKE                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                     JOHN IX GIVE MAN IX NEW COAT
-   90: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *LIKE *LIKE *LIKE *LIKE                                       POSS NEW CAR BREAK-DOWN
-  105: *LIKE *LIKE                                                   JOHN LEG
-  107: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN POSS FRIEND HAVE CANDY
-  108: *LIKE *LIKE                                                   WOMAN ARRIVE
-  113: *LIKE *LIKE *LIKE *LIKE *LIKE                                 IX CAR BLUE SUE BUY
-  119: *LIKE *LIKE *LIKE *LIKE *LIKE                                 SUE BUY IX CAR BLUE
-  122: *LIKE *LIKE *LIKE                                             JOHN READ BOOK
-  139: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *LIKE *LIKE *LIKE                                             LOVE JOHN WHO
-  167: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX SAY LOVE MARY
-  171: *LIKE *LIKE *LIKE                                             JOHN MARY BLAME
-  174: *LIKE *LIKE *LIKE *LIKE *LIKE                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *LIKE *LIKE                                                   JOHN ARRIVE
-  184: *LIKE *LIKE *LIKE *LIKE *LIKE                                 ALL BOY GIVE TEACHER APPLE
-  189: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  193: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  199: LIKE *LIKE *LIKE                                              LIKE CHOCOLATE WHO
-  201: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_norm</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorCV</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9438202247191011
-Total correct: 10 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: *MARY WRITE *WRITE                                            JOHN WRITE HOMEWORK
-    7: *WRITE *WRITE *WRITE *WRITE                                   JOHN CAN GO CAN
-   12: *WRITE *WRITE *WRITE *WRITE                                   JOHN CAN GO CAN
-   21: *WRITE *WRITE *WRITE *WRITE *WRITE *WRITE *WRITE *WRITE       JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *WRITE *WRITE *WRITE *LIKE *LIKE                              JOHN LIKE IX IX IX
-   28: *ANN *ANN *ANN *ANN *ANN                                      JOHN LIKE IX IX IX
-   30: *ANN *ANN *ANN *ANN *ANN                                      JOHN LIKE IX IX IX
-   36: *ANN *NOT *NOT *NOT *NOT *NOT                                 MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *JOHN *JOHN                                        JOHN MUST BUY HOUSE
-   50: *JOHN JOHN *JOHN *JOHN *JOHN                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *JOHN *JOHN                                        JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN *JOHN *JOHN                                        JOHN WILL VISIT MARY
-   74: JOHN *JOHN *JOHN *JOHN                                        JOHN NOT VISIT MARY
-   77: *JOHN *JOHN *JOHN                                             ANN BLAME MARY
-   84: *JOHN *JOHN *JOHN *JOHN                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                      JOHN IX GIVE MAN IX NEW COAT
-   90: *SELF *SELF *SELF *SELF *SELF *SELF                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *SELF *SELF *SELF *SELF *SELF *SELF                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *SELF *SELF *SELF *SELF                                       POSS NEW CAR BREAK-DOWN
-  105: *SELF *SELF                                                   JOHN LEG
-  107: *SELF *SELF *SELF *SELF *SELF                                 JOHN POSS FRIEND HAVE CANDY
-  108: *SELF *SELF                                                   WOMAN ARRIVE
-  113: *SELF *SELF *SELF *SELF *SELF                                 IX CAR BLUE SUE BUY
-  119: *SELF *SELF *SELF *SELF *SELF                                 SUE BUY IX CAR BLUE
-  122: *SELF *SELF *SELF                                             JOHN READ BOOK
-  139: *SELF *SELF *SELF *SELF *SELF                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *SELF *SELF *SELF *SELF *SELF                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *SELF *SELF *SELF                                             LOVE JOHN WHO
-  167: *SELF *SELF *SELF *SELF *SELF                                 JOHN IX SAY LOVE MARY
-  171: *SELF *SELF *SELF                                             JOHN MARY BLAME
-  174: *SELF *SELF *SELF *SELF *SELF                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *SELF *SELF                                                   JOHN ARRIVE
-  184: *SELF *SELF *SELF *SELF *SELF                                 ALL BOY GIVE TEACHER APPLE
-  189: *SELF *SELF *SELF *SELF                                       JOHN GIVE GIRL BOX
-  193: *SELF *SELF *SELF *SELF                                       JOHN GIVE GIRL BOX
-  199: *SELF *SELF *SELF                                             LIKE CHOCOLATE WHO
-  201: *SELF *SELF *SELF *SELF *SELF *SELF                           JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_polar</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorCV</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9662921348314607
-Total correct: 6 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: *GO WRITE *WRITE                                              JOHN WRITE HOMEWORK
-    7: *WRITE *WHAT *WHAT *WHAT                                      JOHN CAN GO CAN
-   12: *WHAT *WHAT *WHAT *WHAT                                       JOHN CAN GO CAN
-   21: *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT *WHAT               JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: *WHAT LIKE *LIKE *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   28: *LIKE LIKE *LIKE *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   30: *LIKE LIKE *LIKE *LIKE *LIKE                                  JOHN LIKE IX IX IX
-   36: *LIKE *LIKE *LIKE *LIKE LIKE *LIKE                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX THINK MARY LOVE
-   43: *LIKE *LIKE *LIKE *LIKE                                       JOHN MUST BUY HOUSE
-   50: *LIKE *LIKE *LIKE *LIKE *LIKE                                 FUTURE JOHN BUY CAR SHOULD
-   54: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN SHOULD NOT BUY HOUSE
-   57: *LIKE *LIKE *LIKE *LIKE                                       JOHN DECIDE VISIT MARY
-   67: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN FUTURE NOT BUY HOUSE
-   71: *LIKE *LIKE *LIKE *LIKE                                       JOHN WILL VISIT MARY
-   74: *LIKE *LIKE *LIKE *LIKE                                       JOHN NOT VISIT MARY
-   77: *LIKE *LIKE *LIKE                                             ANN BLAME MARY
-   84: *LIKE *LIKE *LIKE *LIKE                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                     JOHN IX GIVE MAN IX NEW COAT
-   90: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *LIKE *LIKE *LIKE *LIKE                                       POSS NEW CAR BREAK-DOWN
-  105: *LIKE *LIKE                                                   JOHN LEG
-  107: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN POSS FRIEND HAVE CANDY
-  108: *LIKE *LIKE                                                   WOMAN ARRIVE
-  113: *LIKE *LIKE *LIKE *LIKE *LIKE                                 IX CAR BLUE SUE BUY
-  119: *LIKE *LIKE *LIKE *LIKE *LIKE                                 SUE BUY IX CAR BLUE
-  122: *LIKE *LIKE *LIKE                                             JOHN READ BOOK
-  139: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *LIKE *LIKE *LIKE                                             LOVE JOHN WHO
-  167: *LIKE *LIKE *LIKE *LIKE *LIKE                                 JOHN IX SAY LOVE MARY
-  171: *LIKE *LIKE *LIKE                                             JOHN MARY BLAME
-  174: *LIKE *LIKE *LIKE *LIKE *LIKE                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *LIKE *LIKE                                                   JOHN ARRIVE
-  184: *LIKE *LIKE *LIKE *LIKE *LIKE                                 ALL BOY GIVE TEACHER APPLE
-  189: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  193: *LIKE *LIKE *LIKE *LIKE                                       JOHN GIVE GIRL BOX
-  199: LIKE *LIKE *LIKE                                              LIKE CHOCOLATE WHO
-  201: *LIKE *LIKE *LIKE *LIKE *LIKE *LIKE                           JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_delta</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorCV</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.9157303370786517
-Total correct: 15 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *JOHN *JOHN                                              JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *MARY *MARY *MARY *MARY *MARY                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   28: JOHN *MARY *MARY *MARY *MARY                                  JOHN LIKE IX IX IX
-   30: *MARY *MARY *MARY *MARY *MARY                                 JOHN LIKE IX IX IX
-   36: MARY *MARY *MARY *MARY *MARY *MARY                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: *MARY *MARY *MARY MARY *MARY                                  JOHN IX THINK MARY LOVE
-   43: *MARY *MARY *MARY *MARY                                       JOHN MUST BUY HOUSE
-   50: *MARY *MARY *MARY *MARY *MARY                                 FUTURE JOHN BUY CAR SHOULD
-   54: *MARY *MARY *MARY *MARY *MARY                                 JOHN SHOULD NOT BUY HOUSE
-   57: *MARY *MARY *MARY MARY                                        JOHN DECIDE VISIT MARY
-   67: *MARY *MARY *MARY *MARY *MARY                                 JOHN FUTURE NOT BUY HOUSE
-   71: *MARY *MARY *MARY MARY                                        JOHN WILL VISIT MARY
-   74: *MARY *MARY *MARY MARY                                        JOHN NOT VISIT MARY
-   77: *MARY *MARY MARY                                              ANN BLAME MARY
-   84: *MARY *MARY *MARY *MARY                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: *MARY *MARY *MARY *MARY *MARY *MARY *MARY                     JOHN IX GIVE MAN IX NEW COAT
-   90: *MARY *MARY *MARY *MARY *MARY *MARY                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *MARY *MARY *MARY *MARY *MARY *MARY                           JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *MARY *MARY *MARY *MARY                                       POSS NEW CAR BREAK-DOWN
-  105: *MARY *MARY                                                   JOHN LEG
-  107: *MARY *MARY *MARY *MARY *MARY                                 JOHN POSS FRIEND HAVE CANDY
-  108: *MARY *MARY                                                   WOMAN ARRIVE
-  113: *MARY *MARY *MARY *MARY *MARY                                 IX CAR BLUE SUE BUY
-  119: *MARY *MARY *MARY *MARY *MARY                                 SUE BUY IX CAR BLUE
-  122: *MARY *MARY *MARY                                             JOHN READ BOOK
-  139: *MARY *MARY *MARY *MARY *MARY                                 JOHN BUY WHAT YESTERDAY BOOK
-  142: *MARY *MARY *MARY *MARY *MARY                                 JOHN BUY YESTERDAY WHAT BOOK
-  158: *MARY *MARY *MARY                                             LOVE JOHN WHO
-  167: *MARY *MARY *MARY *MARY MARY                                  JOHN IX SAY LOVE MARY
-  171: *MARY MARY *MARY                                              JOHN MARY BLAME
-  174: *MARY *MARY *MARY *MARY *MARY                                 PEOPLE GROUP GIVE1 JANA TOY
-  181: *MARY *MARY                                                   JOHN ARRIVE
-  184: *MARY *MARY *MARY *MARY *MARY                                 ALL BOY GIVE TEACHER APPLE
-  189: *MARY *MARY *MARY *MARY                                       JOHN GIVE GIRL BOX
-  193: *MARY *MARY *MARY *MARY                                       JOHN GIVE GIRL BOX
-  199: *MARY *MARY *MARY                                             LIKE CHOCOLATE WHO
-  201: *MARY *MARY MARY *MARY *MARY *MARY                            JOHN TELL MARY IX-1P BUY HOUSE
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">load_ext</span> autoreload
-<span class="o">%</span><span class="k">autoreload</span> 2
-<span class="c1"># TODO Choose a feature set and model selector</span>
-<span class="n">features</span> <span class="o">=</span> <span class="n">features_custom</span> <span class="c1"># change as needed</span>
-<span class="n">model_selector</span> <span class="o">=</span> <span class="n">SelectorCV</span> <span class="c1"># change as needed</span>
-
-<span class="c1"># TODO Recognize the test set and display the result with the show_errors method</span>
-<span class="n">models</span> <span class="o">=</span> <span class="n">train_all_words</span><span class="p">(</span><span class="n">features</span><span class="p">,</span> <span class="n">model_selector</span><span class="p">)</span>
-<span class="n">test_set</span> <span class="o">=</span> <span class="n">asl</span><span class="o">.</span><span class="n">build_test</span><span class="p">(</span><span class="n">features</span><span class="p">)</span>
-<span class="n">probabilities</span><span class="p">,</span> <span class="n">guesses</span> <span class="o">=</span> <span class="n">recognize</span><span class="p">(</span><span class="n">models</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-<span class="n">show_errors</span><span class="p">(</span><span class="n">guesses</span><span class="p">,</span> <span class="n">test_set</span><span class="p">)</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-<div class="prompt"></div>
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>The autoreload extension is already loaded. To reload it, use:
-  %reload_ext autoreload
-
-**** WER = 0.8932584269662921
-Total correct: 19 out of 178
-Video  Recognized                                                    Correct
-=====================================================================================================
-    2: JOHN *JOHN *JOHN                                              JOHN WRITE HOMEWORK
-    7: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   12: JOHN *JOHN *JOHN *JOHN                                        JOHN CAN GO CAN
-   21: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
-   25: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   28: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   30: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN LIKE IX IX IX
-   36: MARY *MARY *MARY *MARY *MARY *MARY                            MARY VEGETABLE KNOW IX LIKE CORN1
-   40: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN IX THINK MARY LOVE
-   43: JOHN *JOHN *JOHN *JOHN                                        JOHN MUST BUY HOUSE
-   50: *JOHN JOHN *JOHN *JOHN *JOHN                                  FUTURE JOHN BUY CAR SHOULD
-   54: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN SHOULD NOT BUY HOUSE
-   57: JOHN *JOHN *JOHN *JOHN                                        JOHN DECIDE VISIT MARY
-   67: JOHN *JOHN *JOHN *JOHN *JOHN                                  JOHN FUTURE NOT BUY HOUSE
-   71: JOHN *JOHN *JOHN *JOHN                                        JOHN WILL VISIT MARY
-   74: JOHN *JOHN *JOHN *JOHN                                        JOHN NOT VISIT MARY
-   77: *JOHN *JOHN *JOHN                                             ANN BLAME MARY
-   84: *JOHN *JOHN *JOHN *JOHN                                       IX-1P FIND SOMETHING-ONE BOOK
-   89: JOHN *JOHN *JOHN *JOHN *JOHN *JOHN *JOHN                      JOHN IX GIVE MAN IX NEW COAT
-   90: *WHO *WHO *WHO *WHO *WHO *WHO                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-   92: *WHO *WHO *WHO *WHO *WHO *WHO                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
-  100: *WHO *WHO *WHO *WHO                                           POSS NEW CAR BREAK-DOWN
-  105: *WHO *WHO                                                     JOHN LEG
-  107: *WHO *WHO *WHO *WHO *WHO                                      JOHN POSS FRIEND HAVE CANDY
-  108: *WHO *WHO                                                     WOMAN ARRIVE
-  113: *WHO *WHO *WHO *WHO *WHO                                      IX CAR BLUE SUE BUY
-  119: *WHO *WHO *WHO *WHO *WHO                                      SUE BUY IX CAR BLUE
-  122: *WHO *WHO *WHO                                                JOHN READ BOOK
-  139: *WHO *WHO *WHO *WHO *WHO                                      JOHN BUY WHAT YESTERDAY BOOK
-  142: *WHO *WHO *WHO *WHO *WHO                                      JOHN BUY YESTERDAY WHAT BOOK
-  158: *WHO *WHO WHO                                                 LOVE JOHN WHO
-  167: *WHO *WHO *WHO *WHO *WHO                                      JOHN IX SAY LOVE MARY
-  171: *WHO *WHO *WHO                                                JOHN MARY BLAME
-  174: *WHO *WHO *WHO *WHO *WHO                                      PEOPLE GROUP GIVE1 JANA TOY
-  181: *WHO *WHO                                                     JOHN ARRIVE
-  184: *WHO *WHO *WHO *WHO *WHO                                      ALL BOY GIVE TEACHER APPLE
-  189: *WHO *WHO *WHO *WHO                                           JOHN GIVE GIRL BOX
-  193: *WHO *WHO *WHO *WHO                                           JOHN GIVE GIRL BOX
-  199: *WHO *WHO WHO                                                 LIKE CHOCOLATE WHO
-  201: *WHO *WHO *WHO *WHO *WHO *WHO                                 JOHN TELL MARY IX-1P BUY HOUSE
+    2: JOHN *BROTHER *GIVE1                                          JOHN WRITE HOMEWORK
+    7: JOHN *HAVE GO CAN                                             JOHN CAN GO CAN
+   12: JOHN *WHAT *JOHN CAN                                          JOHN CAN GO CAN
+   21: JOHN *NEW *JOHN *FUTURE *CAR *CAR *FUTURE *WHO                JOHN FISH WONT EAT BUT CAN EAT CHICKEN
+   25: JOHN *IX IX *WHO IX                                           JOHN LIKE IX IX IX
+   28: JOHN *MARY IX IX IX                                           JOHN LIKE IX IX IX
+   30: JOHN LIKE *MARY *MARY *MARY                                   JOHN LIKE IX IX IX
+   36: *IX *VISIT *GIVE *GIVE *MARY *MARY                            MARY VEGETABLE KNOW IX LIKE CORN1
+   40: JOHN *GO *GIVE *JOHN *MARY                                    JOHN IX THINK MARY LOVE
+   43: JOHN *FUTURE BUY HOUSE                                        JOHN MUST BUY HOUSE
+   50: *JOHN *SEE BUY CAR *JOHN                                      FUTURE JOHN BUY CAR SHOULD
+   54: JOHN SHOULD NOT BUY HOUSE                                     JOHN SHOULD NOT BUY HOUSE
+   57: *MARY *GO *GO MARY                                            JOHN DECIDE VISIT MARY
+   67: JOHN FUTURE *MARY BUY HOUSE                                   JOHN FUTURE NOT BUY HOUSE
+   71: JOHN *FUTURE *GIVE1 MARY                                      JOHN WILL VISIT MARY
+   74: *IX *GO *GO MARY                                              JOHN NOT VISIT MARY
+   77: *JOHN *GIVE1 MARY                                             ANN BLAME MARY
+   84: *HOMEWORK *GIVE1 *POSS *COAT                                  IX-1P FIND SOMETHING-ONE BOOK
+   89: *GIVE *GIVE *WOMAN *IX IX *ARRIVE *BOOK                       JOHN IX GIVE MAN IX NEW COAT
+   90: *MARY GIVE IX SOMETHING-ONE WOMAN *ARRIVE                     JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+   92: JOHN *WOMAN IX *IX WOMAN BOOK                                 JOHN GIVE IX SOMETHING-ONE WOMAN BOOK
+  100: POSS NEW CAR BREAK-DOWN                                       POSS NEW CAR BREAK-DOWN
+  105: JOHN *SEE                                                     JOHN LEG
+  107: JOHN POSS *HAVE *GO *MARY                                     JOHN POSS FRIEND HAVE CANDY
+  108: *LOVE *BOOK                                                   WOMAN ARRIVE
+  113: IX CAR *IX *MARY *JOHN                                        IX CAR BLUE SUE BUY
+  119: *MARY *LOVE IX *BLAME *GO                                     SUE BUY IX CAR BLUE
+  122: JOHN *GIVE1 BOOK                                              JOHN READ BOOK
+  139: JOHN *ARRIVE WHAT *MARY *ARRIVE                               JOHN BUY WHAT YESTERDAY BOOK
+  142: JOHN BUY YESTERDAY WHAT BOOK                                  JOHN BUY YESTERDAY WHAT BOOK
+  158: LOVE JOHN WHO                                                 LOVE JOHN WHO
+  167: JOHN *MARY *VISIT LOVE MARY                                   JOHN IX SAY LOVE MARY
+  171: *IX MARY BLAME                                                JOHN MARY BLAME
+  174: *JOHN *CAR GIVE1 *YESTERDAY *WHAT                             PEOPLE GROUP GIVE1 JANA TOY
+  181: *GO ARRIVE                                                    JOHN ARRIVE
+  184: *IX BOY *GIVE1 TEACHER *YESTERDAY                             ALL BOY GIVE TEACHER APPLE
+  189: *MARY *JOHN *YESTERDAY BOX                                    JOHN GIVE GIRL BOX
+  193: JOHN *HAVE *YESTERDAY BOX                                     JOHN GIVE GIRL BOX
+  199: *LOVE *STUDENT *GO                                            LIKE CHOCOLATE WHO
+  201: JOHN *GIVE *WOMAN *LOVE BUY HOUSE                             JOHN TELL MARY IX-1P BUY HOUSE
 </pre>
 </div>
 </div>
@@ -16170,7 +15150,7 @@ Video  Recognized                                                    Correct
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Question 3:</strong>  Summarize the error results from three combinations of features and model selectors.  What was the "best" combination and why?  What additional information might we use to improve our WER?  For more insight on improving WER, take a look at the introduction to Part 4.</p>
-<p><strong>Answer 3:</strong></p>
+<p><strong>Answer 3:</strong> I've found features_polar with SelectorDIC to be a pretty good combination, achieving a WER of ~= 0.54. The three combinations I've submitted have a WER of =&lt; 0.55.</p>
 
 </div>
 </div>
@@ -16188,7 +15168,7 @@ Video  Recognized                                                    Correct
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">asl_test_recognizer</span> <span class="k">import</span> <span class="n">TestRecognize</span>
@@ -16210,7 +15190,7 @@ Video  Recognized                                                    Correct
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>..
 ----------------------------------------------------------------------
-Ran 2 tests in 52.016s
+Ran 2 tests in 49.873s
 
 OK
 </pre>
@@ -16218,7 +15198,7 @@ OK
 </div>
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[46]:</div>
+<div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -16252,7 +15232,7 @@ Good luck!  Share your results with the class!</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a DataFrame of log likelihoods for the test word items</span>
@@ -16269,7 +15249,7 @@ Good luck!  Share your results with the class!</p>
 
 
 <div class="output_area">
-<div class="prompt output_prompt">Out[47]:</div>
+<div class="prompt output_prompt">Out[35]:</div>
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
@@ -16304,123 +15284,123 @@ Good luck!  Share your results with the class!</p>
   <tbody>
     <tr>
       <th>0</th>
-      <td>-121.486246</td>
-      <td>-383.375257</td>
-      <td>-68.481918</td>
-      <td>-12.88972</td>
-      <td>-1606.921176</td>
-      <td>-55.844193</td>
-      <td>-136.291262</td>
-      <td>-2.793433</td>
-      <td>-248.263789</td>
-      <td>-16.500315</td>
+      <td>-2564.662695</td>
+      <td>-1.307288e+05</td>
+      <td>-2874.401923</td>
+      <td>-330.513559</td>
+      <td>-310.478885</td>
+      <td>-361.876865</td>
+      <td>-2873.528478</td>
+      <td>-856.154808</td>
+      <td>-4494.410087</td>
+      <td>-656.882992</td>
       <td>...</td>
-      <td>-104.225805</td>
-      <td>-20.109374</td>
-      <td>-266.062832</td>
-      <td>-20.165763</td>
-      <td>-37.930632</td>
-      <td>-395.151217</td>
-      <td>-68.263527</td>
-      <td>-122.751513</td>
-      <td>-105.505015</td>
-      <td>-85.487915</td>
+      <td>-1461.690433</td>
+      <td>-209.846736</td>
+      <td>-2.308451e+05</td>
+      <td>-281.594944</td>
+      <td>-198.510972</td>
+      <td>-1266.658595</td>
+      <td>-679.876291</td>
+      <td>-719.908531</td>
+      <td>-3168.102643</td>
+      <td>-300.172616</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>-121.486246</td>
-      <td>-383.375257</td>
-      <td>-68.481918</td>
-      <td>-12.88972</td>
-      <td>-1606.921176</td>
-      <td>-55.844193</td>
-      <td>-136.291262</td>
-      <td>-2.793433</td>
-      <td>-248.263789</td>
-      <td>-16.500315</td>
+      <td>-6791.690644</td>
+      <td>-1.893059e+05</td>
+      <td>-9762.085595</td>
+      <td>-117.352307</td>
+      <td>-366.281917</td>
+      <td>-286.137721</td>
+      <td>-7970.543151</td>
+      <td>-113.144852</td>
+      <td>-3834.421244</td>
+      <td>-553.325758</td>
       <td>...</td>
-      <td>-104.225805</td>
-      <td>-20.109374</td>
-      <td>-266.062832</td>
-      <td>-20.165763</td>
-      <td>-37.930632</td>
-      <td>-395.151217</td>
-      <td>-68.263527</td>
-      <td>-122.751513</td>
-      <td>-105.505015</td>
-      <td>-85.487915</td>
+      <td>-181.680072</td>
+      <td>-549.098511</td>
+      <td>-4.321202e+04</td>
+      <td>-341.874210</td>
+      <td>-120.588923</td>
+      <td>-4747.124223</td>
+      <td>-796.099069</td>
+      <td>-1180.981983</td>
+      <td>-87.153768</td>
+      <td>-596.329517</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>-121.486246</td>
-      <td>-383.375257</td>
-      <td>-68.481918</td>
-      <td>-12.88972</td>
-      <td>-1606.921176</td>
-      <td>-55.844193</td>
-      <td>-136.291262</td>
-      <td>-2.793433</td>
-      <td>-248.263789</td>
-      <td>-16.500315</td>
+      <td>-9576.855303</td>
+      <td>-5.271853e+05</td>
+      <td>-16026.510571</td>
+      <td>-291.628654</td>
+      <td>-604.123895</td>
+      <td>-659.456445</td>
+      <td>-11676.616479</td>
+      <td>-820.096761</td>
+      <td>-3441.069400</td>
+      <td>-1148.408933</td>
       <td>...</td>
-      <td>-104.225805</td>
-      <td>-20.109374</td>
-      <td>-266.062832</td>
-      <td>-20.165763</td>
-      <td>-37.930632</td>
-      <td>-395.151217</td>
-      <td>-68.263527</td>
-      <td>-122.751513</td>
-      <td>-105.505015</td>
-      <td>-85.487915</td>
+      <td>-868.473780</td>
+      <td>-690.935442</td>
+      <td>-3.411741e+05</td>
+      <td>-767.909031</td>
+      <td>-486.576277</td>
+      <td>-7242.007128</td>
+      <td>-1772.697111</td>
+      <td>-1706.694261</td>
+      <td>-1550.969261</td>
+      <td>-945.525064</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>-121.486246</td>
-      <td>-383.375257</td>
-      <td>-68.481918</td>
-      <td>-12.88972</td>
-      <td>-1606.921176</td>
-      <td>-55.844193</td>
-      <td>-136.291262</td>
-      <td>-2.793433</td>
-      <td>-248.263789</td>
-      <td>-16.500315</td>
+      <td>-1061.709747</td>
+      <td>-1.887804e+06</td>
+      <td>-1605.172116</td>
+      <td>-278.945683</td>
+      <td>-334.412817</td>
+      <td>-255.232795</td>
+      <td>-567.224467</td>
+      <td>-1099.829814</td>
+      <td>-33897.899104</td>
+      <td>-691.201643</td>
       <td>...</td>
-      <td>-104.225805</td>
-      <td>-20.109374</td>
-      <td>-266.062832</td>
-      <td>-20.165763</td>
-      <td>-37.930632</td>
-      <td>-395.151217</td>
-      <td>-68.263527</td>
-      <td>-122.751513</td>
-      <td>-105.505015</td>
-      <td>-85.487915</td>
+      <td>-3267.297070</td>
+      <td>-501.826780</td>
+      <td>-1.143249e+06</td>
+      <td>-688.150105</td>
+      <td>-543.822145</td>
+      <td>-11861.278942</td>
+      <td>-349.821129</td>
+      <td>-508.134793</td>
+      <td>-14242.293572</td>
+      <td>-525.958554</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>-121.486246</td>
-      <td>-383.375257</td>
-      <td>-68.481918</td>
-      <td>-12.88972</td>
-      <td>-1606.921176</td>
-      <td>-55.844193</td>
-      <td>-136.291262</td>
-      <td>-2.793433</td>
-      <td>-248.263789</td>
-      <td>-16.500315</td>
+      <td>-1462.548501</td>
+      <td>-2.535985e+05</td>
+      <td>-3113.233814</td>
+      <td>-99.509903</td>
+      <td>-167.428954</td>
+      <td>-57.326831</td>
+      <td>-638.972883</td>
+      <td>-154.901535</td>
+      <td>-846.567498</td>
+      <td>-49.622992</td>
       <td>...</td>
-      <td>-104.225805</td>
-      <td>-20.109374</td>
-      <td>-266.062832</td>
-      <td>-20.165763</td>
-      <td>-37.930632</td>
-      <td>-395.151217</td>
-      <td>-68.263527</td>
-      <td>-122.751513</td>
-      <td>-105.505015</td>
-      <td>-85.487915</td>
+      <td>-238.396159</td>
+      <td>-64.713586</td>
+      <td>-4.565087e+05</td>
+      <td>-50.976905</td>
+      <td>-220.353769</td>
+      <td>-5502.558401</td>
+      <td>-155.320980</td>
+      <td>-573.011111</td>
+      <td>-913.248203</td>
+      <td>-486.772030</td>
     </tr>
   </tbody>
 </table>
