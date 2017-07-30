@@ -13063,7 +13063,7 @@ feature sets.  The test simply looks for some valid values but is not exhaustive
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>....
 ----------------------------------------------------------------------
-Ran 4 tests in 0.027s
+Ran 4 tests in 0.042s
 
 OK
 </pre>
@@ -13147,7 +13147,7 @@ OK
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of states trained in model for BOOK is 3
-logL = -2331.1138127433164
+logL = -2331.113812743319
 </pre>
 </div>
 </div>
@@ -13197,16 +13197,16 @@ logL = -2331.1138127433164
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Number of states trained in model for BOOK is 3
 hidden state #0
-mean =  [ -1.12415027  69.44164191  17.02866283  77.7231196 ]
-variance =  [ 19.70434594  16.83041492  30.51552305  11.03678246]
-
-hidden state #1
 mean =  [ -3.46504869  50.66686933  14.02391587  52.04731066]
 variance =  [ 49.12346305  43.04799144  39.35109609  47.24195772]
 
-hidden state #2
+hidden state #1
 mean =  [ -11.45300909   94.109178     19.03512475  102.2030162 ]
 variance =  [  77.403668    203.35441965   26.68898447  156.12444034]
+
+hidden state #2
+mean =  [ -1.12415027  69.44164191  17.02866283  77.7231196 ]
+variance =  [ 19.70434594  16.83041492  30.51552305  11.03678246]
 
 </pre>
 </div>
@@ -14572,11 +14572,11 @@ Train fold indices:[0 1 2 3] Test fold indices:[4 5]
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Training complete for FISH with 3 states with time 0.028416549575134786 seconds
-Training complete for BOOK with 3 states with time 0.13532616449196302 seconds
-Training complete for VEGETABLE with 3 states with time 0.03873565778413213 seconds
-Training complete for FUTURE with 3 states with time 0.11625521266867084 seconds
-Training complete for JOHN with 3 states with time 1.0978431893783183 seconds
+<pre>Training complete for FISH with 3 states with time 0.027386588854254656 seconds
+Training complete for BOOK with 3 states with time 0.12338590734561622 seconds
+Training complete for VEGETABLE with 3 states with time 0.041394465205597 seconds
+Training complete for FUTURE with 3 states with time 0.09433352252724753 seconds
+Training complete for JOHN with 3 states with time 1.0275790329351366 seconds
 </pre>
 </div>
 </div>
@@ -14623,11 +14623,11 @@ Training complete for JOHN with 3 states with time 1.0978431893783183 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
-Training complete for FISH with 5 states with time 0.1816908188264712 seconds
-Training complete for BOOK with 5 states with time 2.6237836251127735 seconds
-Training complete for VEGETABLE with 4 states with time 1.319816916399212 seconds
-Training complete for FUTURE with 4 states with time 2.3001922388071954 seconds
-Training complete for JOHN with 7 states with time 13.201906684634956 seconds
+Training complete for FISH with 5 states with time 0.1458017938867453 seconds
+Training complete for BOOK with 5 states with time 2.4159352936286123 seconds
+Training complete for VEGETABLE with 4 states with time 1.5027096126588155 seconds
+Training complete for FUTURE with 4 states with time 2.28735288291497 seconds
+Training complete for JOHN with 7 states with time 16.125927708765904 seconds
 </pre>
 </div>
 </div>
@@ -14674,11 +14674,11 @@ Training complete for JOHN with 7 states with time 13.201906684634956 seconds
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>The autoreload extension is already loaded. To reload it, use:
   %reload_ext autoreload
-Training complete for FISH with 5 states with time 1.155205894639174 seconds
-Training complete for BOOK with 15 states with time 6.260875143306691 seconds
-Training complete for VEGETABLE with 15 states with time 5.642706266697736 seconds
-Training complete for FUTURE with 15 states with time 6.001379952355975 seconds
-Training complete for JOHN with 15 states with time 15.850753200473363 seconds
+Training complete for FISH with 5 states with time 1.1042887831273234 seconds
+Training complete for BOOK with 15 states with time 5.79173393656427 seconds
+Training complete for VEGETABLE with 15 states with time 4.988348665567081 seconds
+Training complete for FUTURE with 15 states with time 5.431111177254856 seconds
+Training complete for JOHN with 15 states with time 15.777579802711458 seconds
 </pre>
 </div>
 </div>
@@ -14732,7 +14732,7 @@ Training complete for JOHN with 15 states with time 15.850753200473363 seconds
 <div class="output_subarea output_stream output_stderr output_text">
 <pre>....
 ----------------------------------------------------------------------
-Ran 4 tests in 30.853s
+Ran 4 tests in 29.534s
 
 OK
 </pre>
@@ -16208,19 +16208,11 @@ Video  Recognized                                                    Correct
 <div class="prompt"></div>
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>.F
-======================================================================
-FAIL: test_recognize_probabilities_interface (asl_test_recognizer.TestRecognize)
+<pre>..
 ----------------------------------------------------------------------
-Traceback (most recent call last):
-  File &#34;C:\Users\Anton\AIND-Recognizer\asl_test_recognizer.py&#34;, line 19, in test_recognize_probabilities_interface
-    self.assertEqual(len(probs), self.test_set.num_items, &#34;Number of test items in probabilities list incorrect.&#34;)
-AssertionError: 19936 != 178 : Number of test items in probabilities list incorrect.
+Ran 2 tests in 52.016s
 
-----------------------------------------------------------------------
-Ran 2 tests in 46.304s
-
-FAILED (failures=1)
+OK
 </pre>
 </div>
 </div>
@@ -16231,7 +16223,7 @@ FAILED (failures=1)
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;unittest.runner.TextTestResult run=2 errors=0 failures=1&gt;</pre>
+<pre>&lt;unittest.runner.TextTestResult run=2 errors=0 failures=0&gt;</pre>
 </div>
 
 </div>
@@ -16286,38 +16278,153 @@ Good luck!  Share your results with the class!</p>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>0</th>
-      <th>1</th>
+      <th>ALL</th>
+      <th>ANN</th>
+      <th>APPLE</th>
+      <th>ARRIVE</th>
+      <th>BILL</th>
+      <th>BLAME</th>
+      <th>BLUE</th>
+      <th>BOOK</th>
+      <th>BORROW</th>
+      <th>BOX</th>
+      <th>...</th>
+      <th>VIDEOTAPE</th>
+      <th>VISIT</th>
+      <th>WANT</th>
+      <th>WHAT</th>
+      <th>WHO</th>
+      <th>WILL</th>
+      <th>WOMAN</th>
+      <th>WONT</th>
+      <th>WRITE</th>
+      <th>YESTERDAY</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>JOHN</td>
-      <td>86.154610</td>
+      <td>-121.486246</td>
+      <td>-383.375257</td>
+      <td>-68.481918</td>
+      <td>-12.88972</td>
+      <td>-1606.921176</td>
+      <td>-55.844193</td>
+      <td>-136.291262</td>
+      <td>-2.793433</td>
+      <td>-248.263789</td>
+      <td>-16.500315</td>
+      <td>...</td>
+      <td>-104.225805</td>
+      <td>-20.109374</td>
+      <td>-266.062832</td>
+      <td>-20.165763</td>
+      <td>-37.930632</td>
+      <td>-395.151217</td>
+      <td>-68.263527</td>
+      <td>-122.751513</td>
+      <td>-105.505015</td>
+      <td>-85.487915</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>WRITE</td>
-      <td>-36.946578</td>
+      <td>-121.486246</td>
+      <td>-383.375257</td>
+      <td>-68.481918</td>
+      <td>-12.88972</td>
+      <td>-1606.921176</td>
+      <td>-55.844193</td>
+      <td>-136.291262</td>
+      <td>-2.793433</td>
+      <td>-248.263789</td>
+      <td>-16.500315</td>
+      <td>...</td>
+      <td>-104.225805</td>
+      <td>-20.109374</td>
+      <td>-266.062832</td>
+      <td>-20.165763</td>
+      <td>-37.930632</td>
+      <td>-395.151217</td>
+      <td>-68.263527</td>
+      <td>-122.751513</td>
+      <td>-105.505015</td>
+      <td>-85.487915</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>HOMEWORK</td>
-      <td>19.824194</td>
+      <td>-121.486246</td>
+      <td>-383.375257</td>
+      <td>-68.481918</td>
+      <td>-12.88972</td>
+      <td>-1606.921176</td>
+      <td>-55.844193</td>
+      <td>-136.291262</td>
+      <td>-2.793433</td>
+      <td>-248.263789</td>
+      <td>-16.500315</td>
+      <td>...</td>
+      <td>-104.225805</td>
+      <td>-20.109374</td>
+      <td>-266.062832</td>
+      <td>-20.165763</td>
+      <td>-37.930632</td>
+      <td>-395.151217</td>
+      <td>-68.263527</td>
+      <td>-122.751513</td>
+      <td>-105.505015</td>
+      <td>-85.487915</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>IX-1P</td>
-      <td>-42.729702</td>
+      <td>-121.486246</td>
+      <td>-383.375257</td>
+      <td>-68.481918</td>
+      <td>-12.88972</td>
+      <td>-1606.921176</td>
+      <td>-55.844193</td>
+      <td>-136.291262</td>
+      <td>-2.793433</td>
+      <td>-248.263789</td>
+      <td>-16.500315</td>
+      <td>...</td>
+      <td>-104.225805</td>
+      <td>-20.109374</td>
+      <td>-266.062832</td>
+      <td>-20.165763</td>
+      <td>-37.930632</td>
+      <td>-395.151217</td>
+      <td>-68.263527</td>
+      <td>-122.751513</td>
+      <td>-105.505015</td>
+      <td>-85.487915</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>SEE</td>
-      <td>-57.743565</td>
+      <td>-121.486246</td>
+      <td>-383.375257</td>
+      <td>-68.481918</td>
+      <td>-12.88972</td>
+      <td>-1606.921176</td>
+      <td>-55.844193</td>
+      <td>-136.291262</td>
+      <td>-2.793433</td>
+      <td>-248.263789</td>
+      <td>-16.500315</td>
+      <td>...</td>
+      <td>-104.225805</td>
+      <td>-20.109374</td>
+      <td>-266.062832</td>
+      <td>-20.165763</td>
+      <td>-37.930632</td>
+      <td>-395.151217</td>
+      <td>-68.263527</td>
+      <td>-122.751513</td>
+      <td>-105.505015</td>
+      <td>-85.487915</td>
     </tr>
   </tbody>
 </table>
+<p>5 rows × 112 columns</p>
 </div>
 </div>
 
